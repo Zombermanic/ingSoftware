@@ -18,9 +18,9 @@
   </head>
   
   <body>
-    <nav class="navbar navbar-expand-lg bg-primary ">
+    <nav class="navbar navbar-expand-lg bg-dark ">
       <div class="container-fluid">
-        <a class="navbar-brand" href="inicio.html">Importadora Larrain</a>
+        <a class="navbar-brand text-white" href="inicio.html">Importadora Larrain</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle
@@ -30,81 +30,64 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="sobrenosotros.html">Sobre Nosotros</a>
+              <a class="nav-link  text-white" href="sobrenosotros.html">Sobre Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pedidos.html">Pedidos</a>
+              <a class="nav-link text-white" href="pedidos.html">Pedidos</a>
             </li>
           </ul>
         </div>
         <div>
           <a href="menu_sesion.html">
-            <button type="button" class="btn btn-outline-dark">Inicia Sesión</button>
+            <button type="button" class="btn btn-primary">Inicia Sesión</button>
           </a>
           
           <a href="usuarionuevo.html">
-            <button type="button" class="btn btn-dark">Crear usuario</button>
+            <button type="button" class="btn btn-primary">Crear usuario</button>
           </a>
         </div>
       </div>
     </nav>
-
     <!--inicio cuerpo aqui-->
     <!-- espacio del carrucel -->
-    <div id="carouselExampleCaptions" class="carousel slide w-75 mx-auto mt-3">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="0" class="active" aria-current="true"
-          aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="imagenes/banderas_chile.jpg" class="d-inline-flex w-50 mt-3"
-            alt="banderas">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Directo de su origen</h5>
-            <p>productos traidos directamente de china </p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="imagenes/porductos.jpg" class="d-inline-flex w-50 mt-3"
-            alt="flores">
-          <div class="text-opacity-100 carousel-caption d-none d-md-block">
-            <h5>Todo lo tegnologico</h5>
-            <p>Todas los porductos electronicos que buscas en un solo lugar</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="imagenes/tienda-ropa-moda-sostenible.webp" class="d-inline-flex w-50 mt-3"
-            alt="guantes">
-          <div class="text-opacity-100 carousel-caption d-none d-md-block">
-            <h5>Ropa y mas cosas</h5>
-            <p>Tanto para ti como para tu hogar</p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button"
-        data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button"
-        data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
+    <div class="contenedor">
+      <div class="carousel-container">
+        <div class="carousel">
+           <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+             </div>
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                 <img src="imagenes/banderas_chile.jpg" class="d-block w-100" alt="bandera">
+               </div>
+              <div class="carousel-item">
+                <img src="imagenes/porductos.jpg" class="d-block w-100" alt="porductos">
+               </div>
+              <div class="carousel-item">
+                 <img src="imagenes/tienda-ropa-moda-sostenible.webp" class="d-block w-100" alt="">
+               </div>
+             </div>
+             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+               <span class="visually-hidden">Previous</span>
+             </button>
+             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+               <span class="carousel-control-next-icon" aria-hidden="true"></span>
+               <span class="visually-hidden">Next</span>
+            </button>
+           </div>
+         </div>
+       </div>
+    </div>   
 
-    <!-- espacio para el texto-->
-    
+    <!-- espacio para el catalogo-->
     <div class="container-flud">
       <div class="row row-cols-3 row-cols-md-3 col-6 m-auto g-2">
         <div class="col">
-          <div class="card">
+          <div class="card bg-dark text-white">
             <img src="imagenes/foto_polera.webp" class="card-img-top"
               alt="poleras">//
             <div class="card-body">
@@ -118,7 +101,7 @@
           </div>
         </div>
         <div class="col">
-          <div class="card">
+          <div class="card bg-dark text-white">
             <img src="imagenes/control_ps4.jpg" class="card-img-top" alt="pala">
             <div class="card-body">
               <h4 class="card-title">Control de PS4</h4>
@@ -135,7 +118,7 @@
           </div>
         </div>
         <div class="col">
-          <div class="card">
+          <div class="card bg-dark text-white">
             <img src="imagenes/bolso" class="card-img-top"
               alt="bolso">
             <div class="card-body">
@@ -153,7 +136,7 @@
           </div>
         </div>
         <div class="col">
-          <div class="card">
+          <div class="card bg-dark text-white">
             <img src="imagenes/macetero grut" class="card-img-top"
               alt="macetero">
             <div class="card-body">
@@ -167,7 +150,7 @@
           </div>
         </div>
         <div class="col">
-          <div class="card">
+          <div class="card bg-dark text-white">
             <img src="imagenes/herramientas.webp" class="card-img-top" alt="herramientas">
             <div class="card-body">
               <h4 class="card-title">Caja de herramientas</h4>
@@ -178,7 +161,7 @@
           </div>
         </div>
         <div class="col">
-          <div class="card">
+          <div class="card bg-dark text-white">
             <img src="imagenes/Audifonos.webp" class="card-img-top" alt="Insecticisa">
             <div class="card-body">
               <h4 class="card-title">audifonos</h4>
@@ -192,26 +175,29 @@
       </div>
     </div> 
   </body>
+  <br>
   <footer>
-    <div class="row p-0 pb-0 bg-dark text-white z-n1 ">
-      <div class="col-xs-12 col-md-6 col-lg-3">
-        <p class="h5">Importadora Larrain</p>
-      </div>
-      <div class="col-xs-12 col-md-6 col-lg-3">
-        <p class="h5 mb-2">Redes sociales</p>
-        <div class="mb-0">
-          <a class="text-white text-decoration-none" href="">Instagram</a>
+    <div class="container-fluid">
+      <div class="row p-0 pb-0 bg-dark text-white z-n1 ">
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <p class="h5">Importadora Larrain</p>
         </div>
-        <div class="mb-0">
-          <a class="text-white text-decoration-none">Facebook</a>
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <p class="h5 mb-2">Redes sociales</p>
+          <div class="mb-0">
+            <a class="text-white text-decoration-none" href="">Instagram</a>
+          </div>
+          <div class="mb-0">
+            <a class="text-white text-decoration-none">Facebook</a>
+          </div>
+          <div class="mb-0">
+            <a class="text-white text-decoration-none">Twitter</a>
+          </div>
         </div>
-        <div class="mb-0">
-          <a class="text-white text-decoration-none">Twitter</a>
+        <div class="col-xs-12 col-md-6 col-lg-6">
+          <p class="h5">Contacto</p>
+          <p>Número:+56 935544987</p>
         </div>
-      </div>
-      <div class="col-xs-12 col-md-6 col-lg-6">
-        <p class="h5">Contacto</p>
-        <p>Número:+56 935544987</p>
       </div>
     </div>
   </footer>

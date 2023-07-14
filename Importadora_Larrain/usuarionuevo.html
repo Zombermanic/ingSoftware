@@ -5,100 +5,131 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    <title>Document</title>
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+        crossorigin="anonymous">
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-primary ">
+    <nav class="navbar navbar-expand-lg bg-dark ">
         <div class="container-fluid">
-          <a class="navbar-brand" href="inicio.html">Importadora Larrain</a>
-          <button class="navbar-toggler" type="button"
-            data-bs-toggle="collapse"
+          <a class="navbar-brand text-white" href="inicio.html">Importadora Larrain</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false"
-            aria-label="Toggle
-        navigation">
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle
+            navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="sobrenosotros.html">Sobre
-                  Nosotros</a>
+                <a class="nav-link  text-white" href="sobrenosotros.html">Sobre Nosotros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="pedidos.html">Pedidos</a>
+                <a class="nav-link text-white" href="pedidos.html">Pedidos</a>
               </li>
             </ul>
           </div>
-        </nav>
+      </nav>
   
-        <!--inicio cuerpo aqui-->
-    <form class="row g-3" onsubmit="validarFormulario(event)">
-        <div class="col-md-6">
-            <label for="inputEmail4" class="form-label">Email</label>
-            <input type="email" class="form-control" id="inputEmail4">
-        </div>
-        <div class="col-md-6">
-            <label for="inputPassword4" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" id="inputPassword4">
-        </div>
-        <div class="col-12">
-            <label for="inputAddress" class="form-label">Dirección</label>
-            <input type="text" class="form-control" id="inputAddress">
-        </div>
-        <div class="col-md-6">
-            <label for="rut-input" class="form-label">Rut sin puntos y con
-                guion</label>
-            <input type="text" class="form-control" id="rut-input">
-            <span id="rut-error" style="color:red;"></span>
-        </div>
-        <div>
-            <label for="cboRegiones">Regiones</label>
-            <select name="cboRegiones" id="cboRegiones" class="form-select
-                    mb-3 col-md-4">
-                <option value="" disable hidden>Seleccione una opción</option>
-            </select>
+    <br>
 
-            <label for="cboComunas">Comunas</label>
-            <select name="cboComunas" id="cboComunas" class="form-select
-                    mb-3 col-md-4" disabled>
-                <option value="" disable hidden>Seleccione una opción</option>
-            </select>
-        </div>
-        <div class="col-12">
-            <button type="submit" class="btn btn-primary">Registrarme</button>
-        </div>
-    </form>
+    <!--inicio cuerpo aqui-->
+
+
+
+
+  <div class="contenedor">
+    <div class="container-fluid">
+        <form class="row g-3" onsubmit="validarFormulario(event)">
+            <div class="col-md-6 text-white">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6 text-white">
+                <label for="inputPassword4" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-12 text-white">
+                <label for="inputAddress" class="form-label">Dirección</label>
+                <input type="text" class="form-control" id="inputAddress">
+            </div>
+            <div class="col-md-6 text-white">
+                <label for="rut-input" class="form-label">RUT</label>
+                <input type="text" class="form-control" id="rut-input">
+                <span id="rut-error" style="color:red;"></span>
+            </div>
+            <div class="text-white">
+                <label for="cboRegiones">Regiones</label>
+                <select name="cboRegiones" id="cboRegiones" class="form-select
+                            mb-3 col-md-4">
+                    <option value="" disable hidden>Seleccione una opción</option>
+                </select>
+
+                <label for="cboComunas">Comunas</label>
+                <select name="cboComunas" id="cboComunas" class="form-select
+                            mb-3 col-md-4" disabled>
+                    <option value="" disable hidden>Seleccione una opción</option>
+                </select>
+            </div>
+            <div class="col-12 text-white">
+                <button type="submit " class="btn btn-primary">Registrarme</button>
+            </div>
+        </form>
+    </div>
+  </div>
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
     <footer>
-        <div class="row p-0 pb-0 bg-dark text-white ">
-          <div class="col-xs-12 col-md-6 col-lg-3">
-            <p class="h5">Importadora Larrain</p>
-          </div>
-          <div class="col-xs-12 col-md-6 col-lg-3">
-            <p class="h5 mb-2">Redes sociales</p>
-            <div class="mb-0">
-              <a class="text-white text-decoration-none" href>Instagram</a>
+        <div class="container-fluid">
+            <div class="row p-0 pb-0 bg-dark text-white z-n1 ">
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <p class="h5">Importadora Larrain</p>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <p class="h5 mb-2">Redes sociales</p>
+                    <div class="mb-0">
+                        <a class="text-white text-decoration-none" href="">Instagram</a>
+                    </div>
+                    <div class="mb-0">
+                        <a class="text-white text-decoration-none">Facebook</a>
+                    </div>
+                    <div class="mb-0">
+                        <a class="text-white text-decoration-none">Twitter</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-6">
+                    <p class="h5">Contacto</p>
+                    <p>Número:+56 935544987</p>
+                </div>
             </div>
-            <div class="mb-0">
-              <a class="text-white text-decoration-none">Facebook</a>
-            </div>
-            <div class="mb-0">
-              <a class="text-white text-decoration-none">Twitter</a>
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-6 col-lg-6">
-            <p class="h5">Contacto</p>
-            <p>Número:+56 935544987</p>
-          </div>
         </div>
-      </footer>
+    </footer>
 </body>
 <script>
     function validarRut(rut) {

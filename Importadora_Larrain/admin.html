@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,13 +14,13 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
       crossorigin="anonymous"></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
-
+  
   <body>
-    <nav class="navbar navbar-expand-lg bg-primary ">
+    <nav class="navbar navbar-expand-lg bg-dark ">
       <div class="container-fluid">
-        <a class="navbar-brand" href="inicio.html">Importadora Larrain</a>
+        <a class="navbar-brand text-white" href="inicio.html">Importadora Larrain</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle
@@ -30,32 +30,44 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="sobrenosotros.html">Sobre Nosotros</a>
+              <a class="nav-link  text-white" href="sobrenosotros.html">Sobre Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="catalogo.html">Catalogo</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pedidos.html">Pedidos</a>
+              <a class="nav-link text-white" href="pedidos.html">Pedidos</a>
             </li>
           </ul>
         </div>
+        <div>
+          <a href="menu_sesion.html">
+            <button type="button" class="btn btn-primary">Inicia Sesión</button>
+          </a>
+          
+          <a href="usuarionuevo.html">
+            <button type="button" class="btn btn-primary">Crear usuario</button>
+          </a>
+        </div>
       </div>
     </nav>
-    <h3>Bienvenido a nuestro sitio de Administradores, Inicia sesión para
-      continuar</h3>
+    <div class="container-fluid">
+      <div class="row-cols-2 text-white">
+        <div class="col-md mt-5 p-1">
+          <h3>Bienvenido a nuestro sitio de Administradores, Inicia sesión para
+            continuar</h3>
+        </div>
+      </div>
+    
     <div class="container-fluid">
       <div class="row-cols-2">
         <div class="col-md">
           <form>
-            <div class="row mb-3">
+            <div class="row mb-3 text-white">
               <label for="inputEmail3" class="col-sm-2 col-form-label">Correo
                 Electrónico</label>
               <div class="col-sm-10">
                 <input type="email" class="form-control" id="inputEmail3">
               </div>
             </div>
-            <div class="row mb-3">
+            <div class="row mb-3 text-white">
               <label for="inputPassword3" class="col-sm-2 col-form-label">Contraseña</label>
               <div class="col-sm-10">
                 <input type="password" class="form-control" id="inputPassword3">
@@ -69,32 +81,64 @@
       <div class="col-md-20">
         <div class="d-grid gap-1 col-1 mx-auto">
           <a href="PagAdmin.html">
-            <button type="button" class="btn btn-outline-primary">Login</button>
+            <button type="button" class="btn btn-primary">Login</button>
           </a>
         </div>
       </div>
     </div>
   </body>
+  <!--Espacio para caudrar el footer-->
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
   <footer>
-    <div class="row p-0 pb-0 bg-dark text-white ">
-      <div class="col-xs-12 col-md-6 col-lg-3">
-        <p class="h5">Importadora Larrain</p>
-      </div>
-      <div class="col-xs-12 col-md-6 col-lg-3">
-        <p class="h5 mb-2">Redes sociales</p>
-        <div class="mb-0">
-          <a class="text-white text-decoration-none" href>Instagram</a>
+    <div class="container-fluid">
+      <div class="row p-0 pb-0 bg-dark text-white z-n1 ">
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <p class="h5">Importadora Larrain</p>
         </div>
-        <div class="mb-0">
-          <a class="text-white text-decoration-none">Facebook</a>
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <p class="h5 mb-2">Redes sociales</p>
+          <div class="mb-0">
+            <a class="text-white text-decoration-none" href="">Instagram</a>
+          </div>
+          <div class="mb-0">
+            <a class="text-white text-decoration-none">Facebook</a>
+          </div>
+          <div class="mb-0">
+            <a class="text-white text-decoration-none">Twitter</a>
+          </div>
         </div>
-        <div class="mb-0">
-          <a class="text-white text-decoration-none">Twitter</a>
+        <div class="col-xs-12 col-md-6 col-lg-6">
+          <p class="h5">Contacto</p>
+          <p>Número:+56 935544987</p>
         </div>
-      </div>
-      <div class="col-xs-12 col-md-6 col-lg-6">
-        <p class="h5">Contacto</p>
-        <p>Número:+56 935544987</p>
       </div>
     </div>
   </footer>
